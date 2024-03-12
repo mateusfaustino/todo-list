@@ -1,1 +1,3 @@
-alert("Olá mundo")
+window.addEventListener('load',()=>{
+    alert("ok")
+})
