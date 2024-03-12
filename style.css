@@ -1,0 +1,53 @@
+#modal{
+    z-index: 1;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 40px;
+    background: rgba(255, 255, 255, 0.7);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    transition: all 1s ease 0s;
+    padding: 32px 10vw;
+}
+#modal form{
+    background: rgb(255, 255, 255);
+    margin: 0px 10vw;
+    padding: 16px;
+    box-shadow: rgba(0, 0, 0, 0.14) 0px 4px 5px 0px, rgba(0, 0, 0, 0.12) 0px 1px 10px 0px, rgba(0, 0, 0, 0.2) 0px 2px 4px -1px;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(0px);
+    transition: all 0.5s ease 0s;
+}
+.input-wrapp{
+    align-items: center;
+    width: 100%;
+    margin-bottom: 16px;
+}
+.actions{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.btn-add{
+    position: fixed;
+    z-index: 2;
+    right: 10vw;
+    bottom: 32px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+
+}
