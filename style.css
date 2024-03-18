@@ -6,10 +6,10 @@
     -webkit-box-pack: start;
     justify-content: flex-start;
     position: fixed;
-    top: 40px;
+    top: 0;
     background: rgba(255, 255, 255, 0.7);
     width: 100vw;
-    height: 100vh;
+    height: fit-content;
     display: flex;
     transition: all 1s ease;
     padding: 32px 10vw;
@@ -69,6 +69,22 @@
  * animation slide-bottom
  * ----------------------------------------
  */
+ #listaTarefa{
+  margin-top: 32px;
+  width: 100%;
+  max-width: 600px;
+ }
+ .itemtarefa{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #000;
+  border-radius: 8px;
+  margin-bottom: 16px;
+
+ }
  @-webkit-keyframes slide-bottom {
     0% {
       -webkit-transform: translateY(-200px);

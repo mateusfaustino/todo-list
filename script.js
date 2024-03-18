@@ -20,7 +20,17 @@ function salvarTarefa(event){
     let $listaTarefa = document.querySelector("#listaTarefa")
     let $task = document.querySelector("#task")
     let tarefaAtual = $task.value
-    $listaTarefa.innerHTML+=`<h3>${tarefaAtual}</h3>`
+    $listaTarefa.innerHTML+=`
+    <div class="itemtarefa">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        </div>
+        <h3>
+            ${tarefaAtual}
+        </h3>
+        <button type="button" class="btn btn-danger">Danger</button>
+    </div>
+    `
     
 } 
 
