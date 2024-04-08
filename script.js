@@ -1,5 +1,5 @@
+let contador = 1;
 window.addEventListener('load',()=>{
-    
     let $btnAdd = document.querySelector("#btn-add")
     let $btnSalvar = document.querySelector("#btn-salvar")
     let $btnCancelar = document.querySelector("#btn-cancelar")
@@ -21,21 +21,27 @@ function salvarTarefa(event){
     let $task = document.querySelector("#task")
     let tarefaAtual = $task.value
     $listaTarefa.innerHTML+=`
-    <div class="itemtarefa">
+    <div class="itemtarefa" id="tarefa-${contador}">
         <div class="form-check">
             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
         </div>
         <h3>
             ${tarefaAtual}
         </h3>
-        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-danger" onclick="deletarTarefa('${'tarefa-'+contador}')">Excluir</button>
     </div>
     `
-    
+    contador++
+    console.log(contador)
 } 
 
 function cancelar(event){
     event.preventDefault()
     let $modal = document.querySelector("#modal")
     $modal.classList.remove("modal-active")
+}
+
+function deletarTarefa(id){
+    let tarefaHtml = document.querySelector(`#${id}`)
+    tarefaHtml.remove()
 }
