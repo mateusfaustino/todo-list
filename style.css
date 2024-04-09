@@ -105,4 +105,7 @@
               transform: translateY(100px);
     }
   }
-  
+  #error-message{
+    color: crimson;
+    font-size: 12px;
+  }
