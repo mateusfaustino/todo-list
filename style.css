@@ -74,17 +74,25 @@
   width: 100%;
   max-width: 600px;
  }
- .itemtarefa{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  padding: 8px;
-  border: 1px solid #000;
-  border-radius: 8px;
-  margin-bottom: 16px;
-
+ 
+ #listaTarefa h3{
+  word-break: break-word;
  }
+ 
+ .itemtarefa{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 100%;
+   padding: 8px;
+   border: 1px solid #000;
+   border-radius: 8px;
+   margin-bottom: 16px;
+   
+  }
+  .itemtarefa.active{
+    background-color: lawngreen;
+  }
  @-webkit-keyframes slide-bottom {
     0% {
       -webkit-transform: translateY(-200px);
